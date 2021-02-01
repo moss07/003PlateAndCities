@@ -93,7 +93,7 @@ namespace _003PlateAndCities
             Osmaniye,
             Düzce
         }
-
+         
         #endregion
 
         static void Main(string[] args)
@@ -522,6 +522,203 @@ namespace _003PlateAndCities
                     output = "*** Please write correct number ***";
                     break;
             }
+
+            #endregion
+
+            #region Fourth Way with Array
+
+            string[,] PlakaVeSehirlerBaslik = new string[1, 2];
+            PlakaVeSehirlerBaslik[0, 0] = "Plakalar";
+            PlakaVeSehirlerBaslik[0, 1] = "Şehirler";
+
+            string baslik = "";
+            for (int i = 0; i <= PlakaVeSehirlerBaslik.GetUpperBound(0); i++)
+            {
+                for (int j = 0; j <= PlakaVeSehirlerBaslik.GetUpperBound(1); j++)
+                {
+                    baslik += PlakaVeSehirlerBaslik[i, j] + "\t";
+                }
+            }
+
+            Console.Write(baslik);
+
+            string[,] plakalarVeSehirler = new string[82, 2];
+            plakalarVeSehirler[0, 0] = "";
+            plakalarVeSehirler[0, 1] = "";
+            plakalarVeSehirler[1, 0] = "01";
+            plakalarVeSehirler[1, 1] = "Adana";
+            plakalarVeSehirler[2, 0] = "02";
+            plakalarVeSehirler[2, 1] = "Adıyaman";
+            plakalarVeSehirler[3, 0] = "03";
+            plakalarVeSehirler[3, 1] = "Afyon";
+            plakalarVeSehirler[4, 0] = "04";
+            plakalarVeSehirler[4, 1] = "Ağrı";
+            plakalarVeSehirler[5, 0] = "05";
+            plakalarVeSehirler[5, 1] = "Amasya";
+            plakalarVeSehirler[6, 0] = "06";
+            plakalarVeSehirler[6, 1] = "Ankara";
+            plakalarVeSehirler[7, 0] = "07";
+            plakalarVeSehirler[7, 1] = "Antalya";
+            plakalarVeSehirler[8, 0] = "08";
+            plakalarVeSehirler[8, 1] = "Artvin";
+            plakalarVeSehirler[9, 0] = "09";
+            plakalarVeSehirler[9, 1] = "Aydın";
+            plakalarVeSehirler[10, 0] = "10";
+            plakalarVeSehirler[10, 1] = "Balıkesir";
+            plakalarVeSehirler[11, 0] = "11";
+            plakalarVeSehirler[11, 1] = "Bilecik";
+            plakalarVeSehirler[12, 0] = "12";
+            plakalarVeSehirler[12, 1] = "Bitlis";
+            plakalarVeSehirler[13, 0] = "13";
+            plakalarVeSehirler[13, 1] = "Bingöl";
+            plakalarVeSehirler[14, 0] = "14";
+            plakalarVeSehirler[14, 1] = "Bolu";
+            plakalarVeSehirler[15, 0] = "15";
+            plakalarVeSehirler[15, 1] = "Burdur";
+            plakalarVeSehirler[16, 0] = "16";
+            plakalarVeSehirler[16, 1] = "Bursa";
+            plakalarVeSehirler[17, 0] = "17";
+            plakalarVeSehirler[17, 1] = "Çanakkale";
+            plakalarVeSehirler[18, 0] = "18";
+            plakalarVeSehirler[18, 1] = "Çankırı";
+            plakalarVeSehirler[19, 0] = "19";
+            plakalarVeSehirler[19, 1] = "Çorum";
+            plakalarVeSehirler[20, 0] = "20";
+            plakalarVeSehirler[20, 1] = "Denizli";
+            plakalarVeSehirler[21, 0] = "21";
+            plakalarVeSehirler[21, 1] = "Diyarbakır";
+            plakalarVeSehirler[22, 0] = "22";
+            plakalarVeSehirler[22, 1] = "Edirne";
+            plakalarVeSehirler[23, 0] = "23";
+            plakalarVeSehirler[23, 1] = "Elazığ";
+            plakalarVeSehirler[24, 0] = "24";
+            plakalarVeSehirler[24, 1] = "Erzincan";
+            plakalarVeSehirler[25, 0] = "25";
+            plakalarVeSehirler[25, 1] = "Erzurum";
+            plakalarVeSehirler[26, 0] = "26";
+            plakalarVeSehirler[26, 1] = "Eskişehir";
+            plakalarVeSehirler[27, 0] = "27";
+            plakalarVeSehirler[27, 1] = "Gaziantep";
+            plakalarVeSehirler[28, 0] = "28";
+            plakalarVeSehirler[28, 1] = "Giresun";
+            plakalarVeSehirler[29, 0] = "29";
+            plakalarVeSehirler[29, 1] = "Gümüşhane";
+            plakalarVeSehirler[30, 0] = "30";
+            plakalarVeSehirler[30, 1] = "Hakkari";
+            plakalarVeSehirler[31, 0] = "31";
+            plakalarVeSehirler[31, 1] = "Hatay";
+            plakalarVeSehirler[32, 0] = "32";
+            plakalarVeSehirler[32, 1] = "Isparta";
+            plakalarVeSehirler[33, 0] = "33";
+            plakalarVeSehirler[33, 1] = "Mersin";
+            plakalarVeSehirler[34, 0] = "34";
+            plakalarVeSehirler[34, 1] = "İstanbul";
+            plakalarVeSehirler[35, 0] = "35";
+            plakalarVeSehirler[35, 1] = "İzmir";
+            plakalarVeSehirler[36, 0] = "36";
+            plakalarVeSehirler[36, 1] = "Kars";
+            plakalarVeSehirler[37, 0] = "37";
+            plakalarVeSehirler[37, 1] = "Kastamonu";
+            plakalarVeSehirler[38, 0] = "38";
+            plakalarVeSehirler[38, 1] = "Kayseri";
+            plakalarVeSehirler[39, 0] = "39";
+            plakalarVeSehirler[39, 1] = "Kırklareli";
+            plakalarVeSehirler[40, 0] = "40";
+            plakalarVeSehirler[40, 1] = "Kırşehir";
+            plakalarVeSehirler[41, 0] = "41";
+            plakalarVeSehirler[41, 1] = "Kocaeli";
+            plakalarVeSehirler[42, 0] = "42";
+            plakalarVeSehirler[42, 1] = "Konya";
+            plakalarVeSehirler[43, 0] = "43";
+            plakalarVeSehirler[43, 1] = "Kütahya";
+            plakalarVeSehirler[44, 0] = "44";
+            plakalarVeSehirler[44, 1] = "Malatya";
+            plakalarVeSehirler[45, 0] = "45";
+            plakalarVeSehirler[45, 1] = "Manisa";
+            plakalarVeSehirler[46, 0] = "46";
+            plakalarVeSehirler[46, 1] = "Kahramanmaraş";
+            plakalarVeSehirler[47, 0] = "47";
+            plakalarVeSehirler[47, 1] = "Mardin";
+            plakalarVeSehirler[48, 0] = "48";
+            plakalarVeSehirler[48, 1] = "Muğla";
+            plakalarVeSehirler[49, 0] = "49";
+            plakalarVeSehirler[49, 1] = "Muş";
+            plakalarVeSehirler[50, 0] = "50";
+            plakalarVeSehirler[50, 1] = "Nevşehir";
+            plakalarVeSehirler[51, 0] = "51";
+            plakalarVeSehirler[51, 1] = "Niğde";
+            plakalarVeSehirler[52, 0] = "52";
+            plakalarVeSehirler[52, 1] = "Ordu";
+            plakalarVeSehirler[53, 0] = "53";
+            plakalarVeSehirler[53, 1] = "Rize";
+            plakalarVeSehirler[54, 0] = "54";
+            plakalarVeSehirler[54, 1] = "Sakarya";
+            plakalarVeSehirler[55, 0] = "55";
+            plakalarVeSehirler[55, 1] = "Samsun";
+            plakalarVeSehirler[56, 0] = "56";
+            plakalarVeSehirler[56, 1] = "Siirt";
+            plakalarVeSehirler[57, 0] = "57";
+            plakalarVeSehirler[57, 1] = "Sinop";
+            plakalarVeSehirler[58, 0] = "58";
+            plakalarVeSehirler[58, 1] = "Sivas";
+            plakalarVeSehirler[59, 0] = "59";
+            plakalarVeSehirler[59, 1] = "Tekirdağ";
+            plakalarVeSehirler[60, 0] = "60";
+            plakalarVeSehirler[60, 1] = "Tokat";
+            plakalarVeSehirler[61, 0] = "61";
+            plakalarVeSehirler[61, 1] = "Trabzon";
+            plakalarVeSehirler[62, 0] = "62";
+            plakalarVeSehirler[62, 1] = "Tunceli";
+            plakalarVeSehirler[63, 0] = "63";
+            plakalarVeSehirler[63, 1] = "Şanlıurfa";
+            plakalarVeSehirler[64, 0] = "64";
+            plakalarVeSehirler[64, 1] = "Uşak";
+            plakalarVeSehirler[65, 0] = "65";
+            plakalarVeSehirler[65, 1] = "Van";
+            plakalarVeSehirler[66, 0] = "66";
+            plakalarVeSehirler[66, 1] = "Yozgat";
+            plakalarVeSehirler[67, 0] = "67";
+            plakalarVeSehirler[67, 1] = "Zonguldak";
+            plakalarVeSehirler[68, 0] = "68";
+            plakalarVeSehirler[68, 1] = "Aksaray";
+            plakalarVeSehirler[69, 0] = "69";
+            plakalarVeSehirler[69, 1] = "Bayburt";
+            plakalarVeSehirler[70, 0] = "70";
+            plakalarVeSehirler[70, 1] = "Karaman";
+            plakalarVeSehirler[71, 0] = "71";
+            plakalarVeSehirler[71, 1] = "Kırıkkale";
+            plakalarVeSehirler[72, 0] = "72";
+            plakalarVeSehirler[72, 1] = "Batman";
+            plakalarVeSehirler[73, 0] = "73";
+            plakalarVeSehirler[73, 1] = "Şırnak";
+            plakalarVeSehirler[74, 0] = "74";
+            plakalarVeSehirler[74, 1] = "Bartın";
+            plakalarVeSehirler[75, 0] = "75";
+            plakalarVeSehirler[75, 1] = "Ardahan";
+            plakalarVeSehirler[76, 0] = "76";
+            plakalarVeSehirler[76, 1] = "Iğdır";
+            plakalarVeSehirler[77, 0] = "77";
+            plakalarVeSehirler[77, 1] = "Yalova";
+            plakalarVeSehirler[78, 0] = "78";
+            plakalarVeSehirler[78, 1] = "Karabük";
+            plakalarVeSehirler[79, 0] = "79";
+            plakalarVeSehirler[79, 1] = "Kilis";
+            plakalarVeSehirler[80, 0] = "80";
+            plakalarVeSehirler[80, 1] = "Osmaniye";
+            plakalarVeSehirler[81, 0] = "81";
+            plakalarVeSehirler[81, 1] = "Düzce";
+
+            string pVs = "";
+            for (int i = 0; i <= plakalarVeSehirler.GetUpperBound(0); i++)
+            {
+                for (int j = 0; j <= plakalarVeSehirler.GetUpperBound(1); j++)
+                {
+                    pVs += plakalarVeSehirler[i, j] + "\t" + "\t";
+                }
+                pVs += "\n";
+            }
+            Console.Write(pVs);
+
 
             #endregion
 
